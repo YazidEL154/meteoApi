@@ -7,6 +7,7 @@ import { Component } from 'react';
 import { IconText } from './components/icon-texte.component';
 import { Temperature } from './components/temperature.component';
 import { Vent } from './components/vent.component';
+import { Form } from './components/formVille.component';
 
 const KEY = "8dcaf456a33627bdf3a6e96f200d9146";
 
@@ -24,11 +25,17 @@ class App extends Component{
       sens: undefined,
       icon: undefined
     };
-    this.meteroParVille();
+    //this.meteroParVille();
   }
 
-  meteroParVille = async() => {
-    const api = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=${KEY}&lang=fr&units=metric`);
+  meteroParVille = async(e) => {
+
+    e.preventDefault();
+
+    const ville = e.target.elements.ville.value;
+    const pays = e.target.elements.pays.value;
+
+    const api = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ville},${pays}&appid=${KEY}&lang=fr&units=metric`);
     const resp = await api.json();
 
     console.log(resp);
@@ -49,6 +56,7 @@ class App extends Component{
   render() {
     return (
       <div className="App">
+        <Form recupMeteo={this.meteroParVille}/>
         <Meteo ville={this.state.ville} pays={this.state.pays}/>
         <IconText icon={this.state.icon} text={this.state.text} />
         <Temperature temp_max={this.state.temp_max} temp_min={this.state.temp_min} />
