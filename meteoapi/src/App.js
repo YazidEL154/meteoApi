@@ -41,7 +41,7 @@ class App extends Component{
     console.log(resp);
 
     this.setState({
-      ville: resp.name,
+      ville: resp.name+",",
       pays: resp.sys.country,
       temp_max: resp.main.temp_max,
       temp_min: resp.main.temp_min,
