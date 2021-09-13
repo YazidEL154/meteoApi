@@ -1,3 +1,11 @@
+# L'application web Météo :
+Ce projet contient les fichiers sources de l'application météo qui permet d'avoir les infos sur les températures max et min, la vitesse du vent, le sens du vent, la ville, le pays et le logo avec la description en fonction de la météo.
+
+## Docker
+J'ai mis aussi le fichier Docker ainsi que le fichier docker-compose.yml qui contiennent les commandes nécessaires pour Dockeriser l'appli météo.
+
+# ---------------------------------------------------------------------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
