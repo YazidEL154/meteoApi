@@ -49,7 +49,7 @@ class App extends Component{
       text: resp.weather[0].description,
       vent: resp.wind.speed,
       sens: resp.wind.deg,
-      icon: "http://openweathermap.org/img/wn/"+resp.weather[0].icon+"@2x.png"
+      icon: "http://openweathermap.org/img/wn/"+resp.weather[0].icon+"@4x.png"
     })
   };
 

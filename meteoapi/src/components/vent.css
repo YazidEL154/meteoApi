@@ -1,0 +1,12 @@
+.vent{
+    display: inline-flex;
+    justify-content: center;
+}
+.textvent{
+    margin-right: 1em;
+    margin-left: 1em;
+    text-shadow: 0 0 10px white;
+}
+.h2vent{
+    color:bisque;
+}
