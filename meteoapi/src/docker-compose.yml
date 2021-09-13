@@ -1,0 +1,29 @@
+#version d'api docker compose 
+version: "3.7" 
+
+#Liste des services à lancer : 
+services:  
+  #nom du service: 
+    front: 
+  #emplacement du dockerfile pour le nuild 
+      build: . 
+  #configuration du port 'équivalent du –p'
+      ports: 
+        - 80:80 
+
+# back:
+#   build:
+#     ports:
+#       - 3000:3000
+
+#     bdd:
+#       image: mongo
+
+# #mongo express (gestion du mongo en web)
+#     mongo-express:
+#       image: mongo-express
+#       ports: 
+#         - 3001:8081
+#   #variables d'environement
+#       environment: 
+#         - ME_CONFIG_MONGODB_SERVER=bdd
