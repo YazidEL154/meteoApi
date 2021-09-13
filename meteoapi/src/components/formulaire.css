@@ -1,5 +1,34 @@
 .formulaire{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;    
+    margin-left:85px;
+}
+.inputVille{
+    margin: 20px;
+    padding: 8px;
+    background: #edf2f5;
+    border:0px;
+    border-bottom: 2px solid gray;
+}
+.inputPays{
+    margin: 20px;
+    border:0px;
+    background: #edf2f5;
+    padding: 8px;
+    border-bottom: 2px solid gray;
+}
+.submit{
+    border:0px;
+    border-bottom: 2px solid gray;
+    font-size: 20px;
+    padding: 6px;
+    font-weight: bolder;
+    background-color: transparent;
+    -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+     -ms-transition: all 0.2s;
+     -o-transition: all 0.2s;
+     transition: all 0.2s;
+}
+.submit:hover {
+    transform: scale(1.1);
+    border: 2px solid black;
 }
